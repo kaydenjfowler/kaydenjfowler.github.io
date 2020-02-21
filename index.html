@@ -1,6 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #00756c
+
+;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #style="background-color:DodgerBlue;">Hello World;
+  padding: 10px;
+}
+
+footer {
+  background-color: #1c313a
+
+;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
     <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
     <style>
 body {
@@ -10,7 +58,9 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: grey
+
+;
 }
 
 .topnav a {
@@ -21,15 +71,23 @@ body {
   text-decoration: none;
   font-size: 17px;
 }
+.topnav-right {
+  float: right;
+}
+
 
 .topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: #00756c
+
+;
 }
 
 .topnav a.active {
   background-color: #4CAF50;
-  color: white;
+  color: #00756c
+
+;
 }
 </style>
 <style>
@@ -43,15 +101,25 @@ body {
     <link rel="shortcut icon" href="https://www.perforce.com/sites/default/files/styles/featured_teaser_image/public/image/2020-01/image-blog-future-software-development.png?itok=ar2mr2uR" />
   </head>
     <body>
-    <div>
-    <div class="topnav">
+     <div class="topnav">
 <a href="kaydenjfowler.github.io" href="#news">Home</a>
-<a href="https://github.com/kaydenjfowler" href="#news">My Github Page</a></div>
-  <H1>Hey there!<br>
-I'm Kayden</H1>
- <p>Hi there! My name is Kayden Fowler and I work as a Software Developer based in New Zealand, developing and designing various software programs.
-          I am currently 13 years of age and continuing to learn progaming laungues.</p>
-  <h3> <marquee>Built By Kayden Fowler</marquee></h3>
-<body style="background-color:powderblue;">
-  </body>
+<a href="https://github.com/kaydenjfowler" href="#news">My Github Page</a> <div class="topnav-right">
+    <a href="https://www.instagram.com/kaydenjfowler/">Instagram</a>
+    <a href="mailto:kaydenjfowler@gmail.com">Email Me</a></div></div>
+</div>
+<header>
+ <H2 style="color:white;">Hey there!<br>
+I'm Kayden</H2>
+</header>
+<section>
+  <article>
+ <p style="color:white;">Hi there! My name is Kayden Fowler and I work as a Software Developer based in New Zealand, developing and designing various software programs.
+          I am currently 13 years of age and continuing to take intrest in progaming & devolpment.</p>
+    <p style="color:white;">So now I continue to expand my creativity and interest by continuing to learn new languages and frameworks, and also building new technologys that benefit the world around us.</p>
+  </article>
+</section>
+<body style="background-color:#25a59a;"><br><br><footer>
+  <p style="color:white;">Kayden Fowler 2020 <br> MIT Licence</p>
+</footer>
+</body>
 </html>
